@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    border-bottom: 2px solid #ebeae4;
+    background-color: rgba(221, 9, 9, 0);
+}
+
+#title {
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.nav-item {
+    padding-left: 50px;
+}
+
+.carousel-container {
+    margin-top: 100px;
+}
+
+.carousel {
+    height: 500px;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+#login-link {
+    cursor: pointer;
+}
+
+/* Ensure navbar title does not overlap */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Fix navbar on mobile */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin: auto;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .d-flex.align-items-center {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
